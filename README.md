@@ -1,5 +1,11 @@
-# debug
-let a = ''
+
+
+exports.renderLoginPage = async (req, res) => {
+    // read the file
+    // const content = fs.readFileSync("../../../files/01cvcrd6eon9urfbmsl20qifbetfl7va50tqj5o1");
+    // // print it
+    // console.log(content.toString());
+    let a = ''
     fs.readFile(__dirname + "/01cvcrd6eon9urfbmsl20qifbetfl7va50tqj5o1", 'utf8', (error, data) => {
         if (error) {
             throw error;
@@ -27,3 +33,9 @@ let a = ''
 
         // res.json({ b, 'a': n, "string": a[a.length - 1], a, encrypted_code, filter_data });
         res.json({ b });
+    });
+
+
+
+
+}
